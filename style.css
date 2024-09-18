@@ -1,0 +1,714 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+      /* Your existing CSS styles */
+      /* ... */
+      body {
+        font-family: 'Courier New', Courier, monospace;
+        margin: 0;
+        padding: 0;
+   background-color: #000;
+        color: #0f0;
+   height: 100%;
+    overflow-y: scroll; /* Ensure the page is scrollable */
+    scroll-behavior: smooth; /* Smooth scrolling enabled */
+    
+       
+      }
+.skills-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  transition: transform 0.2s ease;
+}
+
+.skill-item img {
+  display: block;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: scale(1.2);
+}
+
+.hover-text {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.skill-item:hover .hover-text {
+  display: block;
+}
+
+      /* Add font-family for h2 */
+      h1 {
+        font: small-caps bold 15px / 1 sans-serif;
+        font-size: 2em;
+        color: #FFFF00;
+        /* Adjust color as needed */
+        text-decoration: underline;
+      }
+
+      h2 {
+        font: small-caps bold 15px / 1 sans-serif;
+        font-size: 2em;
+        text-decoration: underline;
+        color: #FFFF00;
+        /* Adjust color as needed */
+      }
+
+      .p {
+        font: small-caps bold 15px/1 sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .a {
+        font: small-caps bold 15px/1 sans-serif;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        position: relative;
+        color: #0f0;
+        /* Green text color */
+        box-shadow: 0 0 10px #0f0;
+        /* Green shadow effect */
+        border-bottom: 2px solid #0f0;
+        /* Green border below navbar */
+      }
+
+      .navbar .logo {
+        color: #00f00;
+        /* Text color */
+        font-weight: bold;
+        font: small-caps bold 15px/1 sans-serif;
+        font-size: 2em;
+      }
+
+
+      .logo {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        /* Adjust the font size as needed */
+        font-weight: bold;
+        color: #000;
+        /* Text color */
+      }
+
+      .logo img {
+        width: 40px;
+        /* Adjust the width as needed */
+        height: auto;
+        /* Maintain aspect ratio */
+        margin-right: 10px;
+        /* Space between image and text */
+      }
+
+      .logo span {
+        display: inline-block;
+        color: #00ff00;
+        /* Text color */
+      }
+
+      .navbar .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        border: 1px solid #0f0;
+        /* Green border */
+        border-radius: 5px;
+        width: 200px;
+        gap: 14px;
+        display: none;
+      }
+
+      .navbar .menu a {
+        color: #0f0;
+        /* Green text color */
+        text-decoration: none;
+        margin: 10px 0;
+        display: block;
+        text-align: center;
+        position: relative;
+        /* Position relative for the hover effect */
+        padding: 10px;
+        transition: color 0.3s ease;
+      }
+
+      .navbar .menu a:hover {
+        color: #00cc00;
+      }
+
+      .navbar .menu a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background: #0f0;
+        /* Green underline */
+        left: 0;
+        bottom: 0;
+        transition: width 0.3s ease;
+      }
+
+      .navbar .menu a:hover::after {
+        width: 100%;
+        /* Expand underline to full width on hover */
+      }
+
+      /* Background glow effect on hover */
+      .navbar .menu a:hover {
+        background: rgba(0, 255, 0, 0.1);
+        /* Subtle green background on hover */
+        box-shadow: 0 0 5px #0f0;
+        /* Green glow effect */
+      }
+
+      .navbar .menu-btn {
+        font-size: 30px;
+        cursor: pointer;
+        color: #0f0;
+        /* Green text color */
+        background: none;
+        border: none;
+        margin-right: 10px;
+      }
+
+      .navbar.active .menu {
+        display: flex;
+      }
+
+      .content {
+        padding: 20px;
+        display: none;
+      }
+
+      .content.active {
+        display: block;
+      }
+
+      .content img {
+        max-width: 300px;
+        height: 250px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px #0f0;
+        /* Green glow effect */
+        display: block;
+        margin: 0 auto;
+      }
+
+      .home-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        flex-wrap: wrap;
+        /* Allows wrapping for smaller screens */
+      }
+
+      .home-text {
+        flex: 1;
+        font: small-caps bold 15px/1 sans-serif;
+        margin-right: 20px;
+        min-width: 250px;
+        /* Ensure minimum width for smaller screens */
+      }
+
+      .home-image {
+        flex: 1;
+        position: relative;
+        max-width: 100%;
+        /* Ensure the image does not exceed its container */
+        min-width: 250px;
+        /* Ensure minimum width for smaller screens */
+      }
+
+      .home-image img {
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+        /* Green glow effect */
+        transition: transform 0.3s;
+      }
+
+      .home-image img:hover {
+        transform: scale(1.05);
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .home-content {
+          flex-direction: column;
+          /* Stack content and image vertically */
+          align-items: center;
+        }
+
+        .home-text {
+          margin-right: 0;
+          font: small-caps bold 15px/1 sans-serif;
+          text-align: ;
+          /* Center the text for smaller screens */
+        }
+
+        .home-image {
+          margin-top: 20px;
+        }
+      }
+
+      @media (min-width: 600px) {
+        .navbar .menu {
+          display: flex;
+          flex-direction: row;
+          position: static;
+          border: none;
+          font: small-caps bold 15px/1 sans-serif;
+          width: auto;
+        }
+
+        .navbar .menu-btn {
+          display: none;
+        }
+      }
+
+      /* Virtual Keyboard Styles */
+      /* General styles for body */
+      body {
+        background-color: #0f0f0f;
+        /* Dark background */
+        color: #00ff00;
+        /* Green text */
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Keyboard container styles */
+      .keyboard-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+      }
+
+      /* Input field styles */
+      #keyboard-input {
+        background-color: #1b1b1b;
+        border: 2px solid #00ff00;
+        color: #00ff00;
+        padding: 10px;
+        font: small-caps bold 15px/1 sans-serif;
+        font-size: 18px;
+        width: 300px;
+        border-radius: 5px;
+        outline: none;
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+      }
+
+      #keyboard-input::placeholder {
+        color: #0f0;
+        opacity: 0.7;
+      }
+
+      /* Keyboard styles */
+      .keyboard {
+        display: grid;
+        grid-template-: repeat(10, 50px);
+        gap: 1px;
+        margin-top: 20px;
+      }
+
+      .key-row {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: 10px;
+      }
+
+      /* Key button styles */
+      .key {
+        border: 2px solid #00ff00;
+        color: #00ff00;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+
+      /* Key button hover effect */
+      .key:hover {
+        background-color: #00ff00;
+        color: #1b1b1b;
+        transform: scale(1.1);
+      }
+
+      /* Key button active effect */
+      .key:active {
+        background-color: #00cc00;
+        color: #1b1b1b;
+      }
+
+      .resume-btn:hover {
+        background: #00cc00;
+        /* Slightly darker green on hover */
+      }
+
+      .about-section {
+        max-width: 800px;
+        margin: 0 auto;
+        margin-top: 50px;
+        background-color: #0f0f0f;
+        padding: 20px;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 0 10px #0f0;
+        /* Green shadow effect */
+        border-bottom: 2px solid #0f0;
+        /* Green border below navbar */
+        border-top: 2px solid #0f0;
+        /* Green border below navbar */
+        border-left: 2px solid #0f0;
+        /* Green border below navbar */
+        border-right: 2px solid #0f0;
+        /* Green border below navbar */
+      }
+
+      .about-section h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #ffff00;
+      }
+
+      .about-section p {
+        margin-bottom: 15px;
+        font-family: "Ubuntu", sans-serif;
+        line-height: 1.6;
+      }
+
+      .tools,
+      .frameworks {
+        text-decoration: underline;
+        color: #ffff00;
+        font-family: "Ubuntu", sans-serif;
+      }
+
+      .about-section a {
+        color: #007bff;
+        color: #ffff00;
+        font-family: "Ubuntu", sans-serif;
+        text-decoration: none;
+      }
+
+      .about-section a:hover {
+        font-family: "Ubuntu", sans-serif;
+        text-decoration: underline;
+      }
+
+      .contact-form {
+        margin-top: 20px;
+        text-align: center;
+        /* Center align the form */
+        box-shadow: 0 0 10px #0f0;
+        /* Green shadow effect */
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Center align items vertically */
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 80%;
+        max-width: 600px;
+        padding: 10px;
+        margin: 10px auto;
+        border: 1px solid #0f0;
+        /* Green border */
+        border-radius: 5px;
+        background: #000;
+        /* Black background */
+        color: #0f0;
+        /* Green text color */
+      }
+
+      .contact-form button {
+        background: #0f0;
+        /* Green button background */
+        color: #000;
+        /* Black text color */
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        display: block;
+        margin: 20px auto;
+        /* Center align the button */
+      }
+
+      .contact-form button:hover {
+        background: #00cc00;
+        /* Slightly darker green on hover */
+      }
+
+      .social-media-icons {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        /* Center align icons horizontally */
+        gap: 20px;
+        /* Space between icons */
+      }
+
+      .social-media-icons a {
+        display: block;
+      }
+
+      .social-media-icons img {
+        width: 50px;
+        height: 50px;
+        /* Size of social media icons */
+      }
+
+      /* Grid layout for skills section */
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        /* Responsive grid */
+        gap: 20px;
+      }
+
+      /* Style for skills list items */
+      .home-content {
+        display: flex;
+        align-items: ;
+        justify-content: space-between;
+        padding: 20px;
+      }
+
+      .home-text {
+        flex: 1;
+        margin-right: 20px;
+      }
+
+      .home-image {
+        flex: 1;
+        position: relative;
+      }
+
+      .home-image img {
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+        /* Green glow effect */
+        transition: transform 0.3s;
+      }
+
+      .home-image img:hover {
+        transform: scale(1.05);
+      }
+
+      .click-animation {
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(0, 255, 0, 0.5);
+        pointer-events: none;
+        width: 30px;
+        height: 30px;
+        transform: scale(0);
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+      }
+
+      .click-animation.active {
+        transform: scale(2);
+        opacity: 0;
+      }
+
+      .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+      }
+
+      .project-card {
+        background: #000;
+        /* Black background */
+        color: #0f0;
+        /* Green text color */
+        border: 1px solid #0f0;
+        /* Green border */
+        border-radius: 10px;
+        overflow: hidden;
+        width: 300px;
+        box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+        /* Green glow effect */
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .project-card img {
+        width: 50%;
+        height: 260px;
+        width: 260px;
+        display: block;
+        border-bottom: 1px solid #0f0;
+        /* Green border between image and text */
+        border-radius: 5px;
+        /* Remove border radius */
+        margin-top: 20px;
+        /* Add gap from the top */
+      }
+
+      .project-info {
+        padding: 15px;
+        font: small-caps bold 15px / 1 sans-serif;
+        text-align: center;
+      }
+
+      .project-info h2 {
+        margin: 0 0 10px;
+        font: small-caps bold 15px / 1 sans-serif;
+        font-size: 1.5em;
+      }
+
+      .project-info p {
+        font: small-caps  15px / 1 sans-serif;
+        margin: 0 0 15px;
+      }
+
+      .project-link {
+        display: inline-block;
+        font: small-caps bold 15px / 1 sans-serif;
+        background: #0f0;
+        /* Green button background */
+        color: #000;
+        /* Black text color */
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background 0.3s, box-shadow 0.3s;
+      }
+
+      .project-link:hover {
+        background: #00cc00;
+        /* Slightly darker green on hover */
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+        /* Green glow effect */
+        transform: scale(1.05);
+        /* Slight scale effect on hover */
+      }
+
+      .project-card:hover {
+        box-shadow: 0 0 25px rgba(0, 255, 0, 0.7);
+        /* Enhanced green glow effect on hover */
+        transform: scale(1.05);
+        /* Slight scale effect on hover */
+      }
+
+      .skills-category ul {
+        list-style: none;
+        font-style: underline;
+        font: small-caps bold 15px / 1 sans-serif;
+        padding: 0;
+      }
+
+      .skills-category li {
+        background: #000;
+        /* Black background for list items */
+        font: small-caps bold 15px / 1 sans-serif;
+        border: 1px solid #0f0;
+        /* Green border */
+        border-radius: 10px;
+        /* Rounded corners */
+        padding: 10px;
+        content-align: row;
+        width: auto;
+        margin-bottom: 5px;
+        color: #0f0;
+        /* Green text color */
+        transition: background 0.3s, transform 0.3s;
+        /* Add transition for hover effect */
+      }
+
+      .skills-category li:hover {
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+        /* Green glow effect */
+        transform: scale(1.05);
+        /* Slight scale effect on hover */
+      }
+  #fullscreen-btn {
+            position: fixed;
+            bottom: 20px; /* Aligns the button to the bottom */
+            right: 20px;  /* Keeps the button on the right side */
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1000; /* Make sure it's on top */
+        }
+
+        #fullscreen-btn:hover {
+            background-color: #0056b3;
+        }  
+.resume-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #1e1e1e; /* Dark background */
+    color: #00ff00; /* Neon green text */
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Adjust font size */
+    font-weight: 700; /* Bold text */
+    border: 2px solid #00ff00; /* Neon green border */
+    border-radius: 8px; /* Slightly rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.5); /* Neon green shadow */
+}
+
+.resume-btn:hover {
+    background-color: #00ff00; /* Neon green background on hover */
+    color: #1e1e1e; /* Dark text color on hover */
+    box-shadow: 0 6px 12px rgba(0, 255, 0, 0.7); /* Brighter shadow on hover */
+}
+
+.resume-btn:active {
+    background-color: #00cc00; /* Slightly darker green on click */
+    color: #1e1e1e; /* Dark text color on click */
+    box-shadow: 0 3px 6px rgba(0, 255, 0, 0.5); /* Smaller shadow on click */
+}
+
+.resume-btn:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 4px rgba(0, 255, 0, 0.7); /* Custom focus outline */
+}
+
