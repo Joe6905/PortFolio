@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J0e PortFolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Menu with Virtual Keyboard</title>
+ <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+ <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <img src="C:\Users\Jothish\Documents\portfoliojoe\img\l (1).png" alt="Logo Image">
+        <span>_jOe</span>
+      </div>
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+      <div class="menu">
+        <a href="#" onclick="showSection('home'); return false;">Home</a>
+        <a href="#" onclick="showSection('about'); return false;">About</a>
+        <a href="#" onclick="showSection('projects'); return false;">Projects</a>
+        <a href="#" onclick="showSection('skills'); return false;">Skills</a>
+        <a href="#" onclick="showSection('contact'); return false;">Contact</a>
+      </div>
+    </div>
+    <div id="home" class="content active">
+      <div class="home-content">
+        <div class="home-text">
+          <h1>Home</h1>
+          <span class="first-part" style="color: #73c5ff;">Iam Jothish aka Joe</span>
+          <br>
+          <span class="developer" style="color:#ff4b02;">[FULL-STACK DEVELOPER]</span>
+          <span class="cybersecurity" style="color:#ffffff;">[CYBERSECURITY ENTHUSIAST]</span>
+          <span class="blockchain" style="color:#00ff22;">[BLOCKCHAIN FANATIC]</span>
+          <br>
+<br>
+          <a href="resume.pdf" class="resume-btn">Resume</a>
+        </div>
+        <div class="home-image">
+          <img src= "C:\Users\Jothish\Documents\portfoliojoe\img\vegeta-artwork56656.jpg" alt="Profile Photo">
+        </div>
+      </div>
+      <!-- Virtual Keyboard -->
+      <div class="keyboard-container">
+        <input type="text" id="keyboard-input" placeholder="Joe_Mj" readonly>
+        <div class="keyboard">
+          <div class="key-row">
+            <div class="key">Q</div>
+            <div class="key">W</div>
+            <div class="key">E</div>
+            <div class="key">R</div>
+            <div class="key">T</div>
+            <div class="key">Y</div>
+            <div class="key">U</div>
+            <div class="key">I</div>
+            <div class="key">O</div>
+            <div class="key">P</div>
+          </div>
+          <div class="key-row">
+            <div class="key">A</div>
+            <div class="key">S</div>
+            <div class="key">D</div>
+            <div class="key">F</div>
+            <div class="key">G</div>
+            <div class="key">H</div>
+            <div class="key">J</div>
+            <div class="key">K</div>
+            <div class="key">L</div>
+ <div class="key">Backspace</div>
+          </div>
+          <div class="key-row">
+
+           
+            <div class="key">Z</div>
+            <div class="key">X</div>
+            <div class="key">C</div>
+            <div class="key">V</div>
+ <div class="key">Space</div>
+            <div class="key">B</div>
+            <div class="key">N</div>
+            <div class="key">M</div>
+ 
+            <div class="key">Enter</div>
+          </div>
+          <div class="key-row"></div>
+        </div>
+  <button id="fullscreen-btn">Go Fullscreen</button>
+      </div>
+    </div>
+    <!-- Your existing sections for About, Projects, Skills, and Contact -->
+    <!-- ... -->
+    <div id="about" class="content about-section">
+      <h1>About Me</h1>
+      <p>Hello, I'm Jothish, currently pursuing a Bachelor's degree with a keen interest in various tech fields including cybersecurity, blockchain, web development, and cloud computing.</p>
+      <p>I have hands-on experience with cybersecurity tools such as <span class="tools">Nmap</span>, <span class="tools">Wireshark</span>, and many others. I am proficient in programming languages like <span class="tools">Python</span>, <span class="tools">PHP</span>, and have familiarity with <span class="tools">Java</span>, <span class="tools">C</span>, and <span class="tools">JavaScript</span>. Additionally, I am skilled in database tools like <span class="tools">MongoDB</span> and <span class="tools">Oracle</span>, and frameworks such as <span class="frameworks">Django</span> and <span class="frameworks">Flask</span>. </p>
+      <p>I am eager to work in a reputed company with a positive environment and supportive colleagues. I am excited about the opportunity to test my skills on real-time problems and contribute effectively to a dynamic team.</p>
+    </div>
+  </body>
+</html>
+</div>
+<div id="projects" class="content">
+  <h1>Projects</h1>
+  <div class="projects-container">
+    <div class="project-card">
+      <img src="C:\Users\Jothish\Documents\portfoliojoe\img\vegeta-artwork56656.jpg" alt="Project Image">
+      <div class="project-info">
+        <h2>Portfolio</h2>
+        <p>Personal Portfolio Website using HTmL Css Js...</p>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="https://via.placeholder.com/300" alt="Project Image">
+      <div class="project-info">
+        <h2>BlockChain Cloud Storage </h2>
+        <p>cloud storage that store files through blockchain 
+skills used : solidity ,ethereum ,web3js,metamask,frontend </p>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="https://via.placeholder.com/300" alt="Project Image">
+      <div class="project-info">
+        <h2>Another Repo</h2>
+        <p>This repository highlights my work in JavaScript.</p>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+      <!-- Add more project cards as needed -->
+    </div>
+  </div>
+</div </div>
+
+
+<div id="skills" class="content">
+  <h1>Skills</h1>
+  <div class="skills-section">
+    <div class="grid-container">
+      
+      <!-- Languages Known -->
+      <div class="skills-category">
+        <h2>FrontEnd </h2>
+        <div class="skills-row">
+           <div class="skill-item">
+            <img src="C:\Users\Jothish\Documents\portfoliojoe\img\mongodb.png" alt="MongoDB">
+            <div class="hover-text">Html</div>
+          </div>
+ <div class="skill-item">
+            <img src="C:\Users\Jothish\Documents\portfoliojoe\img\mongodb.png" alt="MongoDB">
+            <div class="hover-text">Css</div>
+          </div>
+ <div class="skill-item">
+            <img src="C:\Users\Jothish\Documents\portfoliojoe\img\mongodb.png" alt="MongoDB">
+            <div class="hover-text">JS</div>
+          </div>
+ <div class="skill-item">
+            <img src="C:\Users\Jothish\Documents\portfoliojoe\img\mongodb.png" alt="MongoDB">
+            <div class="hover-text">AngularJS</div>
+          </div>
+ <div class="skill-item">
+            <img src="C:\Users\Jothish\Documents\portfoliojoe\img\mongodb.png" alt="MongoDB">
+            <div class="hover-text">ReactJS</div>
+          </div>
+ <div class="skill-item">
+            <img src="C:\Users\Jothish\Documents\portfoliojoe\img\mongodb.png" alt="MongoDB">
+            <div class="hover-text">BoostrapJS</div>
+          </div>
+
+                         </div>
+      </div>
+      
+      <!-- Tools -->
+       <div class="skills-category">
+        <h2>BackEnd</h2>
+        <div class="skills-row">
+           <div class="skill-item">
+            <img src="C:\Users\Jothish\Documents\portfoliojoe\img\mongodb.png" alt="MongoDB">
+            <div class="hover-text">Python</div>
+          </div>
+ <div class="skill-item">
+            <img src="C:\Users\Jothish\Documents\portfoliojoe\img\mongodb.png" alt="MongoDB">
+            <div class="hover-text">Java</div>
+          </div>
+<div class="skill-item">
+            <img src="C:\Users\Jothish\Documents\portfoliojoe\img\mongodb.png" alt="MongoDB">
+            <div class="hover-text">NodeJS</div>
+          </div>
+<div class="skill-item">
+            <img src="C:\Users\Jothish\Documents\portfoliojoe\img\mongodb.png" alt="MongoDB">
+            <div class="hover-text">SQL</div>
+          </div>
+<div class="skill-item">
+            <img src="C:\Users\Jothish\Documents\portfoliojoe\img\mongodb.png" alt="MongoDB">
+            <div class="hover-text">PHP</div>
+          </div>
+
+
+                         </div>
+      </div>
+      
+ <div class="skills-category">
+        <h2>Languages Known</h2>
+        <div class="skills-row">
+          <div class="skill-item">
+            <img src="C:\Users\Jothish\Documents\portfoliojoe\img\mongodb.png" alt="MongoDB">
+            <div class="hover-text">MongoDB</div>
+          </div>
+<div class="skill-item">
+            <img src="C:\Users\Jothish\Documents\portfoliojoe\img\mongodb.png" alt="MongoDB">
+            <div class="hover-text">MongoDB</div>
+          </div>
+<div class="skill-item">
+            <img src="C:\Users\Jothish\Documents\portfoliojoe\img\mongodb.png" alt="MongoDB">
+            <div class="hover-text">MongoDB</div>
+          </div>
+<div class="skill-item">
+            <img src="C:\Users\Jothish\Documents\portfoliojoe\img\mongodb.png" alt="MongoDB">
+            <div class="hover-text">MongoDB</div>
+          </div>
+<div class="skill-item">
+            <img src="C:\Users\Jothish\Documents\portfoliojoe\img\mongodb.png" alt="MongoDB">
+            <div class="hover-text">MongoDB</div>
+          </div>
+
+                         </div>
+      </div>
+      
+ <div class="skills-category">
+        <h2>Languages Known</h2>
+        <div class="skills-row">
+          <div class="skill-item">
+            <img src="C:\Users\Jothish\Documents\portfoliojoe\img\mongodb.png" alt="MongoDB">
+            <div class="hover-text">MongoDB</div>
+          </div>
+<div class="skill-item">
+            <img src="C:\Users\Jothish\Documents\portfoliojoe\img\mongodb.png" alt="MongoDB">
+            <div class="hover-text">MongoDB</div>
+          </div>
+<div class="skill-item">
+            <img src="C:\Users\Jothish\Documents\portfoliojoe\img\mongodb.png" alt="MongoDB">
+            <div class="hover-text">MongoDB</div>
+          </div>
+
+                         </div>
+      </div>
+      
+ <div class="skills-category">
+        <h2>Languages Known</h2>
+        <div class="skills-row">
+         <div class="skill-item">
+            <img src="C:\Users\Jothish\Documents\portfoliojoe\img\mongodb.png" alt="MongoDB">
+            <div class="hover-text">MongoDB</div>
+          </div>
+<div class="skill-item">
+            <img src="C:\Users\Jothish\Documents\portfoliojoe\img\mongodb.png" alt="MongoDB">
+            <div class="hover-text">MongoDB</div>
+          </div>
+
+                         </div>
+      </div>
+      
+ <div class="skills-category">
+        <h2>Languages Known</h2>
+        <div class="skills-row">
+         <div class="skill-item">
+            <img src="C:\Users\Jothish\Documents\portfoliojoe\img\mongodb.png" alt="MongoDB">
+            <div class="hover-text">MongoDB</div>
+          </div>
+
+                         </div>
+      </div>
+      
+ <div class="skills-category">
+        <h2>Languages Known</h2>
+        <div class="skills-row">
+         <div class="skill-item">
+            <img src="C:\Users\Jothish\Documents\portfoliojoe\img\mongodb.png" alt="MongoDB">
+            <div class="hover-text">MongoDB</div>
+          </div>
+<div class="skill-item">
+            <img src="C:\Users\Jothish\Documents\portfoliojoe\img\mongodb.png" alt="MongoDB">
+            <div class="hover-text">MongoDB</div>
+          </div>
+
+                         </div>
+      </div>
+      
+ <div class="skills-category">
+        <h2>Languages Known</h2>
+        <div class="skills-row">
+       <div class="skill-item">
+            <img src="C:\Users\Jothish\Documents\portfoliojoe\img\mongodb.png" alt="MongoDB">
+            <div class="hover-text">MongoDB</div>
+          </div>
+<div class="skill-item">
+            <img src="C:\Users\Jothish\Documents\portfoliojoe\img\mongodb.png" alt="MongoDB">
+            <div class="hover-text">MongoDB</div>
+          </div>
+<div class="skill-item">
+            <img src="C:\Users\Jothish\Documents\portfoliojoe\img\mongodb.png" alt="MongoDB">
+            <div class="hover-text">MongoDB</div>
+          </div>
+
+                         </div>
+      </div>
+      
+
+      <!-- Frameworks -->
+      <div class="skills-category">
+        <h2>Frameworks</h2>
+        <div class="skills-row">
+<div class="skill-item">
+            <img src="C:\Users\Jothish\Documents\portfoliojoe\img\mongodb.png" alt="MongoDB">
+            <div class="hover-text">MongoDB</div>
+          </div>
+<div class="skill-item">
+            <img src="C:\Users\Jothish\Documents\portfoliojoe\img\mongodb.png" alt="MongoDB">
+            <div class="hover-text">MongoDB</div>
+          </div>
+<div class="skill-item">
+            <img src="C:\Users\Jothish\Documents\portfoliojoe\img\mongodb.png" alt="MongoDB">
+            <div class="hover-text">MongoDB</div>
+          </div>
+            </div>
+      </div>
+
+      <!-- Add more categories as needed -->
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+<div id="contact" class="content">
+  <h1>Contact</h1>
+  <form class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+  <div class="social-media-icons">
+    <a href="https://github.com/Joe6905" target="_blank">
+      <img src="C:\Users\Jothish\Documents\portfoliojoe\img\l (4).png" alt="GitHub">
+    </a>
+    <a href="https://www.linkedin.com/in/jothiramalingam" target="_blank">
+      <img src="C:\Users\Jothish\Documents\portfoliojoe\img\l (2).png" alt="LinkedIn">
+    </a>
+    <a href="https://instagram.com/Jothish____m" target="_blank">
+      <img src="C:\Users\Jothish\Documents\portfoliojoe\img\l (5).png" alt="Instagram">
+    </a>
+    <a href="https://youtube.com/Mj_here" target="_blank">
+      <img src="C:\Users\Jothish\Documents\portfoliojoe\img\l (6).png" alt="YouTube">
+    </a>
+    <a href="https://facebook.com/JOTHISH.M" target="_blank">
+      <img src="C:\Users\Jothish\Documents\portfoliojoe\img\facebook (1).png" alt="Facebook">
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
